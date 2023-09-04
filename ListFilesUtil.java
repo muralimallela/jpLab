@@ -1,4 +1,3 @@
-package jplab;
 
 import java.io.*;
 import java.lang.*;
@@ -7,7 +6,7 @@ import java.io.File;
 public class ListFilesUtil {
 	public void listFilesAndFolders(String directoryName) {
 		File directory = new File(directoryName);
-//get all the files from a directory
+
 		File[] fList = directory.listFiles();
 		for (File file : fList) {
 			System.out.println(file.getName());
@@ -16,7 +15,7 @@ public class ListFilesUtil {
 
 	public void listFiles(String directoryName) {
 		File directory = new File(directoryName);
-//get all the files from a directory
+
 		File[] fList = directory.listFiles();
 		for (File file : fList) {
 			if (file.isFile()) {
@@ -28,7 +27,7 @@ public class ListFilesUtil {
 
 	public void listFolders(String directoryName) {
 		File directory = new File(directoryName);
-//get all the files from a directory
+
 		File[] fList = directory.listFiles();
 		for (File file : fList) {
 			if (file.isDirectory()) {
@@ -39,7 +38,7 @@ public class ListFilesUtil {
 
 	public void listFilesAndFilesSubDirectories(String directoryName) {
 		File directory = new File(directoryName);
-//get all the files from a directory
+
 		File[] fList = directory.listFiles();
 		for (File file : fList) {
 			if (file.isFile()) {
@@ -53,7 +52,7 @@ public class ListFilesUtil {
 	public static void main(String[] args) {
 		ListFilesUtil listFilesUtil = new ListFilesUtil();
 		final String directoryLinuxMac = "/Users/loiane/test";
-		final String directoryWindows = "E://2-1/";
-		listFilesUtil.listFilesAndFilesSubDirectories(directoryWindows);
+		final String directoryWindows = "D://";
+		listFilesUtil.listFilesAndFolders(directoryWindows);
 	}
 }
