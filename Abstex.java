@@ -1,4 +1,3 @@
-package jplab;
 
 abstract class shape {
 	public int x, y;
