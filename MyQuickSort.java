@@ -1,4 +1,4 @@
-package jplab;
+
 
 public class MyQuickSort {
 
