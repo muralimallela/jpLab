@@ -1,4 +1,3 @@
-package jplab;
 
 import java.util.Arrays;
 
