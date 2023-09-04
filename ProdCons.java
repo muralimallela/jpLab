@@ -1,4 +1,4 @@
-package jplab;
+
 
 class Q{
 	int n;
